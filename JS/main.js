@@ -1,19 +1,20 @@
-const pantallita = document.getElementById(pantallita);
+const pantallita = document.getElementById("pantallita");
 
 function apantallita(input){
-    display.value += input;
+    pantallita.value += input;
 
 }
 
 function limpiarpantalla(){
-    display.value = "";
+    pantallita.value = "";
 }
 
 function calcular(){
     try{
-        display.value = eval(display.value);
+        pantallita.value = eval(pantallita.value);
     }
     catch(error){
-        display.value = "Error de syntaxis"
+        pantallita.value = "Error de syntaxis"
     
+}
 }
